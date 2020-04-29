@@ -9,7 +9,7 @@ pipeline {
 				}
 				stage('NugetRestore'){
 					steps{
-						bat 'C:\Users\Administrator\Downloads\nuget.exe restore WebApplication1.sln'
+						bat 'C:/Users/Administrator/Downloads/nuget.exe restore WebApplication1.sln'
 					}
 				}
 				stage('Build') {
