@@ -11,7 +11,6 @@ pipeline {
     					steps {
 						bat "\"${tool 'MSBuild14'}\" WebApplication1.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:SkipInvalidConfigurations=true /t:build /p:Configuration=Release /p:Platform=\"Any CPU\" /p:DeleteExistingFiles=True /p:publishUrl=c:\\inetpub\\wwwroot"
     					}
-					}
 				}
 			}
 }
